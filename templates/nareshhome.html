@@ -1,0 +1,40 @@
+
+{% extends 'base.html' %}
+{% load staticfiles %}
+<html>
+<head>
+    {% block itle %}
+    <title>home</title>
+    {% endblock %}
+     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+{% block content %}
+<style>
+
+    p{font-size: 25px;margin: -10px;
+        margin-left: 10px;}
+</style>
+<link rel="stylesheet" href="{% static 'css/static css.css' %}">
+
+<h3>Founder</h3>
+    <p>Name of the founder is Nikhil<br>
+        He is born in 23-6-1996<br>
+        In Eluru, AP, westgodavari<br>
+        Hi's higher qualification is Btech<br>
+        He's studied in ECET college</p>
+<img src="{% static 'images/IMG_20181225_011821.jpg' %}">
+<h3>Institute</h3>
+    <p>Durgasoft is one of best institute in Ameerpeat<br>
+    The great experianced faculty it there<br>
+    this institute have a loat of branches<br>
+    those addresses are given in page bellow</p>
+{% endblock %}
+</body>
+</html>

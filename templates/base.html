@@ -1,0 +1,42 @@
+<html>
+<head>
+    {% block title %}
+    <title>naresh</title>
+    {% endblock %}
+</head>
+<style>
+    nav{float: right;}
+    a{margin-right: 70px;color: deeppink}
+    h1{text-align: center;}
+    footer{position: fixed;bottom: -0px;border: 2px black solid;width: 100%;}
+    h2{text-align: center;font-size: 40px}
+    hr{border: 3px black solid;margin: -30px;margin-left: -0px}
+    p1{font-size:20px;margin-left: 10px;margin: 10px;}
+    h3{color: crimson;font-size: 30px;}
+    .jumbotron{color: blue;size: 10px;background-color:yellow;margin: 50px 400px}
+    body{background-color: deepskyblue}
+</style>
+<body>
+<nav>
+    <a href="/Home/">Home</a>
+    <a href="/Contact/">Contact</a>
+    <a href="/Services/">Services</a>
+    <a href="/Gallery/">Gallery</a>
+</nav>
+<br>
+<div class="jumbotron">
+<h1>Welcome To DurgaSoft </h1>
+</div>
+<hr>
+{% block content %}
+
+{% endblock %}
+<footer>
+    <h3>Address 1</h3>
+    <p1>SR Nagar</p1><br>
+    <p1>Satyam theator road</p1><br>
+    <p1>Hyderabad</p1><br>
+    <p1>contact number:9948438359</p1>
+</footer>
+</body>
+</html>

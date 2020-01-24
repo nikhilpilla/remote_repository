@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+<html>
+<head>
+    {% block title %}
+    <title>services</title>
+    {% endblock %}
+     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+{% block content %}
+
+<style>
+    th{font-size: 40px;color: deeppink;margin-top: 100px;margin-left: 50px}
+    td{font-size: 30px;margin-left: 50px}
+    table{margin: 100px;margin-left: 150px}
+</style>
+{% if service %}
+<div class="container"></div>
+<table class="table">
+<thead>
+<tr>
+    <th>CourseNO</th>
+    <th>CourseName </th>
+    <th>Fee</th>
+    <th>Faculty</th>
+    <th>CourseDuration</th>
+</tr>
+</thead>
+{% for i in service%}
+    <tbody>
+    <tr>
+        <td>{{i.courseno}}</td>
+        <td>{{ i.coursename }}</td>
+        <td>{{ i.fee }}</td>
+        <td>{{ i.faculty }}</td>
+        <td>{{ i.timeduration }}</td>
+    </tr>
+    </tbody>
+{% endfor %}
+{% else %}
+{% endif %}
+</table>
+{% endblock %}
+</body>
+</html>

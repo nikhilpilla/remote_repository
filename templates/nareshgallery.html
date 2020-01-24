@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+<html>
+<head>
+    {% block itle %}
+    <title>gallery</title>
+    {% endblock %}
+     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+{% block content %}
+<style>
+    h5{font-size: 30px}
+</style>
+    <h5>All My Students Got Placed In These Companies</h5>
+<link rel="stylesheet" href="{% static 'css/gallery.css' %}">
+<img src="{%static 'images/download.jpg' %}">
+<img src="{% static 'images/images.jpg'  %}">
+<img src="{% static 'images/images (1).jpg'  %}">
+<img src="{% static 'images/images (2).jpg'  %}">
+<img src="{% static 'images/images (3).jpg'  %}">
+<img src="{% static 'images/images (4).jpg'  %}">
+<img src="{% static 'images/images (5).jpg'  %}">
+<img src="{% static 'images/images (6).jpg'  %}">
+<img src="{% static 'images/download (1).jpg'  %}">
+<img src="{% static 'images/download (2).jpg'  %}">
+<img src="{% static 'images/images (7).jpg'  %}">
+<img src="{% static 'images/images (8).jpg'  %}">
+<img src="{% static 'images/images (9).jpg'  %}">
+<img src="{% static 'images/images (10).jpg'  %}">
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+<html>
+<head>
+    {% block itle %}
+    <title>contact</title>
+    {% endblock %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+{% block content %}
+<style>
+    a1{float: right;margin-right: 312px;margin-top: -300px;}
+    b{float: right;margin-top: -350px;margin-right: 450px;}
+    c{font-size: 30px; }
+    #h11{font-size: 40px}
+    h22{margin-left: 100px}
+
+</style>
+<div class="container">
+    <div class="row">
+        <div class="offset-md-3">
+            <form method="POST">
+            {% csrf_token %}
+            <h3 id="h11">Enter Your Details</h3>
+                <c>{{ cform.as_p }}</c><br>
+            <h22><input type="submit" value="signup" class="btn btn-success">
+                <input type="reset" value="clear" class="btn btn-danger"></h22>
+            </form>
+        </div>
+    </div>
+</div>
+<b>Google Map Direction</b>
+<a1><div class="mapouter"><div class="gmap_canvas">
+    <iframe width="300" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=durgasoft%20institute&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.online-timer.net"></a></div><style>.
+mapouter{position:relative;text-align:right;height:200px;width:300px;}.gmap_canvas {overflow:hidden;background:none!important;height:200px;width:300px;}</style></div></a1>
+{% endblock %}
+</body>
+</html>

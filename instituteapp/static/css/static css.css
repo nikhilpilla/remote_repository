@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+img{
+    float: right;
+    margin-right: 600px;
+    margin-top: -125px;
+    width: 300px;height: 250px;
+}
